@@ -1,0 +1,222 @@
+:root {
+  --text-color: #757575;
+  --type-normal: #A8A878;
+  --type-fire: #F08030;
+  --type-water: #6890F0;
+  --type-grass: #78C850;
+  --type-electric: #F8D030;
+  --type-ice: #98D8D8;
+  --type-fighting: #C03028;
+  --type-poison: #A040A0;
+  --type-ground: #E0C068;
+  --type-flying: #A890F0;
+  --type-psychic: #F85888;
+  --type-bug: #A8B820;
+  --type-rock: #B8A038;
+  --type-ghost: #705898;
+  --type-dark: #705848;
+  --type-dragon: #7038F8;
+  --type-steel: #B8B8D0;
+  --type-fairy: #F0B6BC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ************************  Loader ************************** */
+.header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 5rem;
+}
+
+.form {
+  width: 100%;
+  margin: auto;
+  margin-block-start: 2rem;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  outline: 0;
+  border: 0;
+  border-color: #dad8d8;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    width: 80%;
+  }
+}
+
+#grid-fluid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  gap: 1.2rem;
+}
+
+/* ************************  Loader ************************** */
+.loader {
+  display: block;
+  margin: auto;
+}
+
+/* ************************  Card ************************** */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-image: linear-gradient(rgba(235, 220, 220, 0.719), rgb(255, 251, 251)), url('./img/bg-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-title {
+  color: var(--type-dark);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-img {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-img:hover {
+  transform:scale(1.3);transform:scale(1.3);
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.card-img img {
+  max-width: 10rem;
+}
+
+.card-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-types p {
+  padding: .8rem;
+  border-radius: 100vmax;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#modal {
+  width: 70%;
+  margin: auto;
+}
+
+#modal::backdrop {
+  background-color: black;
+}
+
+#links {
+  padding-block: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.normal {
+  background-color: var(--type-normal);
+}
+
+.fire {
+  background-color: var(--type-fire);
+}
+
+.water {
+  background-color: var(--type-water);
+}
+
+.grass {
+  background-color: var(--type-grass);
+}
+
+.electric {
+  background-color: var(--type-electric);
+}
+
+.ice {
+  background-color: var(--type-ice);
+}
+
+.fighting {
+  background-color: var(--type-fighting);
+}
+
+.poison {
+  background-color: var(--type-poison);
+}
+
+.ground {
+  background-color: var(--type-ground);
+}
+
+.flying {
+  background-color: var(--type-flying);
+}
+
+.psychic {
+  background-color: var(--type-psychic);
+}
+
+.bug {
+  background-color: var(--type-bug);
+}
+
+.rock {
+  background-color: var(--type-rock);
+}
+
+.ghost {
+  background-color: var(--type-ghost);
+}
+
+.dark {
+  background-color: var(--type-dark);
+}
+
+.dragon {
+  background-color: var(--type-dragon);
+}
+
+.steel {
+  background-color: var(--type-steel);
+}
+
+.fairy {
+  background-color: var(--type-fairy);
+}
+
+
