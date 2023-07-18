@@ -9,19 +9,24 @@
 </head>
 <body>
   <header class="header">
-    <img src="./img/logo.png" alt="logo pokémon pikachu">
+    <img src="./img/pokedex.png" alt="logo pokémon">
 
     <form class="form">
-      <input type="search" id="search"  name="search" placeholder="Encuentra tu Pokémon favorito...">
+      <input 
+        type="search" 
+        id="search"  
+        name="search" 
+        placeholder="Encuentra tu Pokémon favorito..."
+        autocomplete="off"
+      >
     </form>
   </header>
  
-  <main id="grid-fluid"></main>
+  <main class="grid-fluid"></main>
   
   <dialog id="modal">
-    Aquí va toda la información de los pokémons
   </dialog>
   <nav id="links"></nav>
-  <script src="app.js"></script>
+  <script src="app.js" type="module"></script>
 </body>
 </html>
