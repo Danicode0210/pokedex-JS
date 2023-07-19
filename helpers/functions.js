@@ -117,7 +117,7 @@ export const searchPokemon = async (url) => {
     types = types.join("");
 
     template += `
-      <article class="card" style="width: 260px; margin: auto">
+      <article class="card" style="width: 300px; margin: auto">
         <div class="card-title">
           <span class="title-name">${pokemon.name}</span>
         </div>

@@ -61,7 +61,7 @@ const loadPokemons = async (url) => {
   
   form.addEventListener('submit', async (e) => {
     e.preventDefault()
-    let url = `${urlApi}${searcher.value}`;
+    let url = `${urlApi}${searcher.value.toLowerCase()}`;
     console.log(url)
 
     try {
